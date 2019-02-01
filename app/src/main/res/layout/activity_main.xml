@@ -28,24 +28,24 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="/"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText16"
         app:layout_constraintEnd_toStartOf="@+id/editText17"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText16"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintStart_toEndOf="@+id/editText16" />
 
     <EditText
         android:id="@+id/editText17"
-        android:layout_width="60"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:hint="@string/edit2_jako"
         android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText16"
         app:layout_constraintEnd_toStartOf="@+id/button8"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView16"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
 
     <Button
         android:id="@+id/button8"
@@ -68,10 +68,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintStart_toEndOf="@+id/button8" />
 
     <EditText
         android:id="@+id/editText14"
@@ -196,7 +196,7 @@
 
     <EditText
         android:id="@+id/editText12"
-        android:layout_width="60"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -217,10 +217,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintStart_toEndOf="@+id/button6" />
 
     <TextView
         android:id="@+id/textView14"
@@ -229,14 +229,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="x"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText14"
         app:layout_constraintEnd_toStartOf="@+id/editText15"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText14"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintStart_toEndOf="@+id/editText14" />
 
     <EditText
         android:id="@+id/editText15"
-        android:layout_width="60"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -269,10 +269,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintStart_toEndOf="@+id/button7" />
 
     <Button
         android:id="@+id/button9"
