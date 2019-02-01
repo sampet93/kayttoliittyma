@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Kayttoliittyma</string>
+    <string name="edit1_plussa">0</string>
+    <string name="edit2_plussa">0</string>
+    <string name="edit1_miinus">0</string>
+    <string name="edit2_miinus">0</string>
+    <string name="edit1_kerto">0</string>
+    <string name="edit2_kerto">0</string>
+    <string name="edit1_jako">0</string>
+    <string name="edit2_jako">0</string>
+    <string name="button_calculate">Laske</string>
+    <string name="button_tyhjenna">Tyhjennä kaikki</string>
+    <string name="button_logi">Näytä logi</string>
 </resources>
