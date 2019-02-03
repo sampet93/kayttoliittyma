@@ -4,103 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <EditText
         android:id="@+id/editTextDivide1"
         android:layout_width="60dp"
         android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit1_jako"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editTextMultiply1"
         app:layout_constraintTop_toBottomOf="@+id/editTextMultiply1" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:text="/"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDivide1"
-        app:layout_constraintEnd_toStartOf="@+id/editTextDivide2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextDivide1" />
+        app:layout_constraintStart_toStartOf="@+id/textView14" />
 
     <EditText
         android:id="@+id/editTextDivide2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit2_jako"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDivide1"
-        app:layout_constraintEnd_toStartOf="@+id/buttonDivide"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView16" />
+        app:layout_constraintStart_toStartOf="@+id/editTextMultiply2" />
 
     <Button
         android:id="@+id/buttonDivide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:onClick="calculateResult"
         android:text="@string/button_calculate"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDivide1"
-        app:layout_constraintEnd_toStartOf="@+id/textViewDivide"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextDivide2" />
+        app:layout_constraintStart_toStartOf="@+id/buttonMultiply" />
 
     <TextView
         android:id="@+id/textViewDivide"
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
         android:text="0"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDivide1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonDivide" />
+        app:layout_constraintStart_toStartOf="@+id/textViewMultiply" />
 
     <EditText
         android:id="@+id/editTextMultiply1"
         android:layout_width="60dp"
         android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit1_kerto"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editTextDiff1"
         app:layout_constraintTop_toBottomOf="@+id/editTextDiff1" />
 
     <EditText
         android:id="@+id/editTextDiff1"
         android:layout_width="60dp"
         android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit1_miinus"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/textView12"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editTextSum1"
         app:layout_constraintTop_toBottomOf="@+id/editTextSum1" />
 
     <EditText
@@ -111,8 +91,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit1_plussa"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -122,9 +103,7 @@
         android:id="@+id/buttonSum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:onClick="calculate"
+        android:onClick="calculateResult"
         android:text="@string/button_calculate"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextSum1"
         app:layout_constraintEnd_toStartOf="@+id/textViewSum"
@@ -135,8 +114,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:text="+"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextSum1"
         app:layout_constraintEnd_toStartOf="@+id/editTextSum2"
@@ -147,11 +126,10 @@
         android:id="@+id/editTextSum2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit2_plussa"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextSum1"
         app:layout_constraintEnd_toStartOf="@+id/buttonSum"
         app:layout_constraintHorizontal_bias="0.5"
@@ -159,121 +137,94 @@
 
     <TextView
         android:id="@+id/textViewSum"
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
         android:text="0"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextSum1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonSum" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:text="-"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDiff1"
-        app:layout_constraintEnd_toStartOf="@+id/editTextDiff2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextDiff1" />
+        app:layout_constraintStart_toStartOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonDiff"
-        android:layout_width="wrap_content"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:onClick="calculateResult"
         android:text="@string/button_calculate"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDiff1"
-        app:layout_constraintEnd_toStartOf="@+id/textViewDiff"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextDiff2" />
+        app:layout_constraintStart_toStartOf="@+id/buttonSum" />
 
     <EditText
         android:id="@+id/editTextDiff2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit2_miinus"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDiff1"
-        app:layout_constraintEnd_toStartOf="@+id/buttonDiff"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView12" />
+        app:layout_constraintStart_toStartOf="@+id/editTextSum2" />
 
     <TextView
         android:id="@+id/textViewDiff"
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
         android:text="0"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDiff1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonDiff" />
+        app:layout_constraintStart_toStartOf="@+id/textViewSum" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:text="x"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextMultiply1"
-        app:layout_constraintEnd_toStartOf="@+id/editTextMultiply2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextMultiply1" />
+        app:layout_constraintStart_toStartOf="@+id/textView12" />
 
     <EditText
         android:id="@+id/editTextMultiply2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edit2_kerto"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextMultiply1"
-        app:layout_constraintEnd_toStartOf="@+id/buttonMultiply"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView14" />
+        app:layout_constraintStart_toStartOf="@+id/editTextDiff2" />
 
     <Button
         android:id="@+id/buttonMultiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:onClick="calculateResult"
         android:text="@string/button_calculate"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextMultiply1"
-        app:layout_constraintEnd_toStartOf="@+id/textViewMultiply"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextMultiply2" />
+        app:layout_constraintStart_toStartOf="@+id/buttonDiff" />
 
     <TextView
         android:id="@+id/textViewMultiply"
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
         android:text="0"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextMultiply1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonMultiply" />
+        app:layout_constraintStart_toStartOf="@+id/textViewDiff" />
 
     <Button
         android:id="@+id/buttonClear"
@@ -282,6 +233,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:onClick="emptyAll"
         android:text="@string/button_tyhjenna"
         app:layout_constraintEnd_toStartOf="@+id/buttonLog"
         app:layout_constraintHorizontal_bias="0.5"
@@ -290,10 +242,8 @@
 
     <Button
         android:id="@+id/buttonLog"
-        android:layout_width="113dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:onClick="showLog"
